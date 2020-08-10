@@ -10,6 +10,11 @@ import { APP_ROUTES } from './app.routes';
 
  // Modulos
 import { PagesModule } from './pages/pages.module';
+import { ServiceModule } from './services/service.module';
+import { FormsModule } from '@angular/forms';
+
+// servicios
+
 
 
 
@@ -19,15 +24,16 @@ import { PagesModule } from './pages/pages.module';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-  
-
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
     PagesModule,
+    ServiceModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
